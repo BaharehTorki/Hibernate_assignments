@@ -9,8 +9,4 @@ class ControllerTest {
     @InjectMocks
     private FriendController controller;
 
-    @Test
-    void name() {
-        controller.test();
-    }
 }

@@ -25,9 +25,6 @@ public class Friend {
     private String adress;
     private String mobilNr;
 
-    @OneToMany(mappedBy = "friend")
-    private List<Friend> friends;
-
     public Friend(String name, String adress, String mobilNr){
         this.namn = name;
         this.adress = adress;
