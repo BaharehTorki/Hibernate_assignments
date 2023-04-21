@@ -2,10 +2,7 @@ package com.example.complexhibernate.assignment.controller;
 
 import com.example.complexhibernate.assignment.models.Friend;
 import com.example.complexhibernate.assignment.repos.FriendRepository;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -32,5 +29,10 @@ public class FriendController {
     public List<Friend> addFriend(@RequestBody Friend f) {
         repository.save(f);
         return repository.findAll();
+    }
+
+    @PostMapping("friend/{id}")
+    public Friend addFriend(@PathVariable Long id) {
+        return repository.findById(id).get();
     }
 }
