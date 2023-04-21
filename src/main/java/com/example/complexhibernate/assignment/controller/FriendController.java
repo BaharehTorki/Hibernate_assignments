@@ -35,10 +35,10 @@ public class FriendController {
         return repository.findById(id).get();
     }
 
-  /*  @RequestMapping("friend/{namn}/namn")
+    @RequestMapping("friend/{namn}/namn")
     public Friend findById(@PathVariable String namn) {
         return repository.findByName(namn);
-    }*/
+    }
 
     @RequestMapping("friend/{id}/delete")
     public List<Friend> deleteById(@PathVariable Long id) {
