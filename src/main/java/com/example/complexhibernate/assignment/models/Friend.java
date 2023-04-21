@@ -25,8 +25,8 @@ public class Friend {
     private String adress;
     private String mobilNr;
 
-    public Friend(String name, String adress, String mobilNr){
-        this.namn = name;
+    public Friend(String namn, String adress, String mobilNr){
+        this.namn = namn;
         this.adress = adress;
         this.mobilNr = mobilNr;
     }

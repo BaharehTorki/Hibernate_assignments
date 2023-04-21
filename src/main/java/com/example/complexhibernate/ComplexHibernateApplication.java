@@ -18,11 +18,14 @@ public class ComplexHibernateApplication {
 	@Bean
 	public CommandLineRunner demo(FriendRepository repository){
 		return (args) -> {
-			repository.save(new Friend("Robin", "aaaaaa", "887877777"));
-			repository.save(new Friend("Maria", "bbbbbbb", "0755785456"));
-			repository.save(new Friend("Ida", "ccccccc", "67678346"));
-			repository.save(new Friend("Anna", "ddddddddd", "743452122"));
-			repository.save(new Friend("David", "fffffffff", "543564565"));
+			repository.save(new Friend("Robin", "Stockholm1", "077877777"));
+			repository.save(new Friend("Maria", "Stockholm2", "0755785456"));
+			repository.save(new Friend("Ida", "Stockholm3", "0767837746"));
+			repository.save(new Friend("Anna", "Stockholm4", "0734521202"));
+			repository.save(new Friend("David", "Stockholm5", "0735640565"));
+			repository.save(new Friend("Simon", "Stockholm6", "076421243"));
+			repository.save(new Friend("Emilie", "Stockholm7", "076745734"));
+			repository.save(new Friend("viliam", "Stockholm8", "076564335"));
 		};
 	}
 }

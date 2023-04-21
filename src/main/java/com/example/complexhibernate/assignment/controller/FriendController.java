@@ -24,15 +24,26 @@ public class FriendController {
     public List<Friend> getAllFriends() {
         return repository.findAll();
     }
-
-    @PostMapping("friend/{id}")
-    public Friend findById(@PathVariable Long id) {
-        return repository.findById(id).get();
-    }
-
     @PostMapping("friend/add")
     public List<Friend> addFriend(@RequestBody Friend f) {
         repository.save(f);
         return repository.findAll();
     }
+
+    @RequestMapping("friend/{id}")
+    public Friend findById(@PathVariable Long id) {
+        return repository.findById(id).get();
+    }
+
+  /*  @RequestMapping("friend/{namn}/namn")
+    public Friend findById(@PathVariable String namn) {
+        return repository.findByName(namn);
+    }*/
+
+    @RequestMapping("friend/{id}/delete")
+    public List<Friend> deleteById(@PathVariable Long id) {
+        repository.deleteById(id);
+        return repository.findAll();
+    }
+
 }
