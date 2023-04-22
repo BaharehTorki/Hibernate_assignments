@@ -1,6 +1,5 @@
-package com.example.complexhibernate.assignment.controller;
+package com.example.complexhibernate.assignment1_3.controller;
 
-import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 
 class ControllerTest {

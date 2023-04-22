@@ -1,6 +1,6 @@
-package com.example.complexhibernate.assignment.repos;
+package com.example.complexhibernate.assignment1_3.repos;
 
-import com.example.complexhibernate.assignment.models.Friend;
+import com.example.complexhibernate.assignment1_3.models.Friend;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

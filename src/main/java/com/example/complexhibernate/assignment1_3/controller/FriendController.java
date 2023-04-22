@@ -1,8 +1,7 @@
-package com.example.complexhibernate.assignment.controller;
+package com.example.complexhibernate.assignment1_3.controller;
 
-import com.example.complexhibernate.assignment.models.Friend;
-import com.example.complexhibernate.assignment.repos.FriendRepository;
-import lombok.extern.flogger.Flogger;
+import com.example.complexhibernate.assignment1_3.models.Friend;
+import com.example.complexhibernate.assignment1_3.repos.FriendRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;

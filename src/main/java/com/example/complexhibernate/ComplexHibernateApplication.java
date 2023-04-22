@@ -1,12 +1,10 @@
 package com.example.complexhibernate;
 
-import com.example.complexhibernate.assignment.models.Friend;
-import com.example.complexhibernate.assignment.repos.FriendRepository;
+import com.example.complexhibernate.assignment1_3.repos.FriendRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
 public class ComplexHibernateApplication {
