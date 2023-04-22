@@ -26,6 +26,9 @@ public class FriendController {
     @RequestMapping("friend")
     public List<Friend> getAllFriends() {
         log.info("All friends returned ");
+        log.error("All friends returned in ERROR mess ");
+        log.warn("All friends returned in WARN mess ");
+        log.info("All friends returned in DEBUG mess");
         return repository.findAll();
     }
     @PostMapping("friend/add")
@@ -36,16 +39,17 @@ public class FriendController {
 
     @RequestMapping("friend/{id}")
     public Friend findById(@PathVariable Long id) {
-        log.info("Friend found with id " + id);
-        return repository.findById(id).get();
+        Friend friend = repository.findById(id).get();
+        log.info("{} with id {} has found", friend.getNamn(), friend.getId());
+        return friend;
     }
 
     @RequestMapping("friend/{name}/namn")
     public List <Friend> findById(@PathVariable String name) {
-        return repository.findByName(name);
+        return repository.findByNamn(name);
     }
 
-    @RequestMapping("friend/{id}/delete")
+    @DeleteMapping("friend/{id}/delete")
     public List<Friend> deleteById(@PathVariable Long id) {
         repository.deleteById(id);
         log.info("Friend deleted with id " + id);

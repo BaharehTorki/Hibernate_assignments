@@ -8,6 +8,6 @@ import java.util.List;
 
 @Repository
 public interface FriendRepository extends JpaRepository <Friend,Long> {
-    public List<Friend> findByName(String namn);
+    public List<Friend> findByNamn(String namn);
 
 }
